@@ -1,0 +1,80 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 20px;
+  background-image: url(bgimg.jpg);
+}
+
+h1 {
+  text-align: center;
+}
+
+#ApplicationForm {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#ApplicationForm input[type="text"],
+#ApplicationForm input[type="email"],
+#ApplicationForm input[type="number"],
+#ApplicationForm input[type="date"],
+#ApplicationForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  border-radius: 0;
+  transition: border-bottom-color 0.3s ease;
+}
+
+#ApplicationForm input[type="text"]:focus,
+#ApplicationForm input[type="email"]:focus,
+#ApplicationForm input[type="number"]:focus,
+#ApplicationForm input[type="date"]:focus,
+#ApplicationForm textarea:focus {
+  border-bottom-color: #3500f5;
+  outline: none;
+}
+
+#ApplicationForm input[type="text"]:hover,
+#ApplicationForm input[type="email"]:hover,
+#ApplicationForm input[type="number"]:hover,
+#ApplicationForm input[type="date"]:hover,
+#ApplicationForm textarea:hover {
+  border-bottom-color: #f300de;
+}
+
+
+#ApplicationForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#ApplicationForm textarea {
+  resize: vertical;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+button {
+  background-color: #c14ee4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #58adde;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+}
